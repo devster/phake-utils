@@ -1,0 +1,26 @@
+{
+    "name": "devster/phake-utils",
+    "license": "MIT",
+    "type": "library",
+    "description": "Utils for phake",
+    "keywords": ["utils", "phake", "filesystem", "process", "exec"],
+    "homepage": "https://github.com/devster/phake-utils",
+    "authors": [
+        {
+            "name": "Jeremy Perret",
+            "email": "jeremy@devster.org",
+            "homepage": "https://github.com/devster"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Phake\\Utils\\": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/filesystem": "2.5.*",
+        "symfony/process": "2.5.*"
+    },
+    "require-dev": {
+        "atoum/atoum": "dev-master"
+    }
+}
