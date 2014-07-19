@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @param string $name
+ */
 function _test_internal_call($name, $args) {
     return call_user_func_array('Phake\Utils\Test\Test::'.$name, $args);
 }
