@@ -13,13 +13,13 @@ class Process
      * Execute a sub process
      *
      * @param string $command
-     * @param boolean $output
      * @param boolean $failOnError
+     * @param boolean $output
      * @throws \RuntimeException If the subprocess fails
      *
      * @return integer The exit code of the command
      */
-    public static function exec($command, $output = true, $failOnError = true)
+    public static function exec($command, $failOnError = true, $output = true)
     {
         if ($output) {
             printf("[EXEC] %s\n", $command);
