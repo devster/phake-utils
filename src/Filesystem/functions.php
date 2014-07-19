@@ -2,7 +2,7 @@
 
 // Filesystem
 function _fs_internal_call($name, $args) {
-    return call_user_func_array('Phake\Utils\Filesystem::'.$name, $args);
+    return call_user_func_array('Phake\Utils\Filesystem\Filesystem::'.$name, $args);
 }
 
 function fs_copy() {

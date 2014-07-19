@@ -1,6 +1,6 @@
 <?php
 
-namespace Phake\Utils;
+namespace Phake\Utils\Filesystem;
 
 use Symfony\Component\Filesystem\Filesystem as FS;
 

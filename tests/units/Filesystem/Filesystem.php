@@ -1,8 +1,8 @@
 <?php
 
-namespace Phake\Utils\Tests\Units;
+namespace Phake\Utils\Tests\Units\Filesystem;
 
-use Phake\Utils\Filesystem as FS;
+use Phake\Utils\Filesystem\Filesystem as FS;
 
 class Filesystem extends \mageekguy\atoum\test
 {
