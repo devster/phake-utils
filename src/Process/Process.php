@@ -25,10 +25,16 @@ class Process
             printf("[EXEC] %s\n", $command);
 
             $callback = function ($type, $buffer) {
+                $eol = PHP_EOL;
+
+                if (substr($buffer, -1) == PHP_EOL) {
+                    $eol = '';
+                }
+
                 if (sfProcess::ERR === $type) {
-                    printf("ERR > %s\n", $buffer);
+                    printf("ERR > %s%s", $buffer, $eol);
                 } else {
-                    printf("OUT > %s\n", $buffer);
+                    printf("OUT > %s%s", $buffer, $eol);
                 }
             };
         }
