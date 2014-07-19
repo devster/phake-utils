@@ -1,6 +1,9 @@
 <?php
 
 // Filesystem
+/**
+ * @param string $name
+ */
 function _fs_internal_call($name, $args) {
     return call_user_func_array('Phake\Utils\Filesystem\Filesystem::'.$name, $args);
 }

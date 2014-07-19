@@ -14,7 +14,7 @@ class Process
      *
      * @param string $command
      * @param boolean $output
-     * @param boolean $failOnerror
+     * @param boolean $failOnError
      * @throws \RuntimeException If the subprocess fails
      *
      * @return integer The exit code of the command
