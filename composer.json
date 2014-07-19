@@ -21,6 +21,7 @@
         "symfony/process": "2.5.*"
     },
     "require-dev": {
-        "atoum/atoum": "dev-master"
+        "atoum/atoum": "dev-master",
+        "jaz303/phake": "dev-master"
     }
 }
